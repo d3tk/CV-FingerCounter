@@ -11,13 +11,13 @@ cap = cv2.VideoCapture(0)
 cap.set(3, wCam)
 cap.set(4, hCam)
 
-folder_path = "FingerImages"
-my_list = os.listdir(folder_path)
+#folder_path = "FingerImages"
+#my_list = os.listdir(folder_path)
 
-overlay_list = []
-for im_path in my_list:
-    image = cv2.imread(f'{folder_path}/{im_path}')
-    overlay_list.append(image)
+#overlay_list = []
+#for im_path in my_list:
+ #   image = cv2.imread(f'{folder_path}/{im_path}')
+ #   overlay_list.append(image)
 
 p_time = 0
 detector = handtrack.hand_detector()
